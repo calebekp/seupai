@@ -52,6 +52,12 @@ header .menu{
     justify-content: space-between;
 }
 
+.apresentacao{
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
 footer{
     background-color: var(--color-headerfooter);
 }
