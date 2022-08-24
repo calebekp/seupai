@@ -52,12 +52,34 @@ header .menu{
     justify-content: space-between;
 }
 
+.inicial{
+    margin-top: 40px;
+}
+
 .apresentacao{
     display: flex;
     align-items: center;
-    margin-left: 90px;
+    margin-left: 40px;
+}
+
+.flex-footer{
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
 }
 
 footer{
     background-color: var(--color-headerfooter);
+    display: flex;
+}
+
+footer ul li{
+    display: inline;
+}
+
+footer img{
+    width: 20px;
+    margin-left: 25px;
 }
