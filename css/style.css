@@ -108,6 +108,11 @@ header .menu{
 footer{
     background-color: var(--color-headerfooter);
     display: flex;
+    /* Revisar tamanho footer */
+}
+
+footer p{
+    margin-top: 5px;
 }
 
 footer ul li{
@@ -116,5 +121,6 @@ footer ul li{
 
 footer img{
     width: 20px;
+    margin-top: 10px;
     margin-left: 25px;
 }
