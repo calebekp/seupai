@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Cainã - Tráfego Pago</title>
     
@@ -23,6 +25,7 @@
         </div>
         
     </header>
+
     <main>
         <div class="inicial flex-container">
             <div class="apresentacao">
@@ -32,39 +35,52 @@
             <!-- APRENSENTAÇÃO INICIAL (FUNIL + TEXTOS QUE CHAMEM A ATENÇÃO)
                  + FORMULÁRIO PARA CLIENTES INTERESSADOS -->
         </div>
-        <div class="services flex-container">
-            <h2>Serviços</h2>
-                <div>
-                    <input type="radio" name="accordion__google" id="google_ads" class="accordion__input">
-                    <label for="google_ads" class="accordion__label">Google ADS</label>
-                    <div class="accordion__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor harum rem? Dolore, hic? Hic deserunt animi iusto, commodi necessitatibus voluptates praesentium sed vero, libero ullam, accusantium aliquid tempore atque.</p>
+        <section>
+            <div class="services flex-container">
+                <h2>Serviços</h2>
+                    <div class="container">
+                            <div class="accordion"'>
+                                <div class="accordion-item" id="google">
+                                    <a class="accordion-link" href="#google">
+                                        Google ADS
+                                        <i class="icon ion-md-add"></i>
+                                        <i class="icon ion-md-remove"></i>
+                                    </a>
+                                    <div class="answer">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor harum rem? Dolore, hic? Hic deserunt animi iusto, commodi necessitatibus voluptates praesentium sed vero, libero ullam, accusantium aliquid tempore atque.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item" id="meta">
+                                    <a class="accordion-link" href="#meta">
+                                        META
+                                        <i class="icon ion-md-add"></i>
+                                        <i class="icon ion-md-remove"></i>
+                                    </a>
+                                    <div class="answer">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor harum rem? Dolore, hic? Hic deserunt animi iusto, commodi necessitatibus voluptates praesentium sed vero, libero ullam, accusantium aliquid tempore atque.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item" id="seo">
+                                    <a class="accordion-link" href="#seo">
+                                        SEO
+                                        <i class="icon ion-md-add"></i>
+                                        <i class="icon ion-md-remove"></i>
+                                    </a>
+                                    <div class="answer">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor harum rem? Dolore, hic? Hic deserunt animi iusto, commodi necessitatibus voluptates praesentium sed vero, libero ullam, accusantium aliquid tempore atque.</p>
+                                    </div>
+                                </div>
+
+                            </div>
                     </div>
-                </div>
-                <div>
-                    <input type="radio" name="accordion__meta" id="meta" class="accordion__input">
-                    <label for="meta" class="accordion__label">META</label>
-                    <div class="accordion__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor harum rem? Dolore, hic? Hic deserunt animi iusto, commodi necessitatibus voluptates praesentium sed vero, libero ullam, accusantium aliquid tempore atque.</p>
-                    </div>
-                </div>
-                <div>
-                    <input type="radio" name="accordion__seo" id="seo" class="accordion__input">
-                    <label for="seo" class="accordion__label">SEO</label>
-                    <div class="accordion__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor harum rem? Dolore, hic? Hic deserunt animi iusto, commodi necessitatibus voluptates praesentium sed vero, libero ullam, accusantium aliquid tempore atque.</p>
-                    </div>
-                </div>
-                <!-- APRENSENTAÇÃO PERFIL E SKILLS DO CAINÃ -->
-        </div>
-        <div class="Sobre">
-            <!-- SERVIÇOS OFERECIDOS E DETALHADOS  -->
-        </div>
-        <div class="contato">
-            <!-- Formulário de contato -->
-        </div>
+            </div>
+        </section>    <!-- APRENSENTAÇÃO PERFIL E SKILLS DO CAINÃ -->
     </main>
+
     <br> <!-- SÓ PRA PULA A LINHA E SEPARAR O HEADER DO FOOTER -->
+
     <footer>
         <div class="flex-footer">
             <!-- <img src="" alt="Logo"> COLOCAR NO FUTURO -->
