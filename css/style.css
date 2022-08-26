@@ -53,7 +53,12 @@ header .list-items{
     display: inline-block;
     text-decoration: none;
     color: #fff;
+    font-size: 16px;
+}
 
+.item:hover{
+    font-size: 20px;
+    transition: 600ms;
 }
 
 .item::before,
@@ -97,11 +102,15 @@ header .menu{
     margin-left: 40px;
 }
 
+.container{
+
+}
+
 .accordion-item{
     /*background-color: #283042;*/
-    border-radius: .4rem;
+    /*border-radius: .4rem;*/
     margin-bottom: 1rem;
-    padding: 1rem;
+    /*padding: 1rem;*/
     /*box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);*/ 
 }
 
@@ -112,7 +121,7 @@ header .menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    /*padding: 1rem 0;*/
 }
 
 .accordion-link i{
