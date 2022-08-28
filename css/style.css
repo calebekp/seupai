@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
 
 :root{ /*  SETAMOS AS CORES PADRÃO AQUI E USAMOS SOMENTE A VARIÁVEL NOS ELEMENTOS, ASISM SE PRECISAR MUDAR FAZEMOS UMA VEZ*/
-    --color-background: #212A33;
+    --color-background: #000000;
     --color-headerfooter: #8A7D63;
     --color-text: #D9DFDB;
 }
@@ -100,10 +100,6 @@ header .menu{
     display: flex;
     align-items: center;
     margin-left: 40px;
-}
-
-.container{
-
 }
 
 .accordion-item{
