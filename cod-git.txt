@@ -1,3 +1,10 @@
+Usual
+---/---
+git add <arquivo> ou .(todos)
+git commit -m <comentario>
+git push or git push origin <branch>]
+git branch
+
 Repositorio
 ---/---
 Clonar o repositorio
@@ -5,6 +12,13 @@ git clone <repositorio> <pasta-local>
 ---/---
 Clonar Brnach específica
 git clone -branch new_feature <repositorio>
+---/---
+Criar branch
+git checkout -b <dev>
+---/---
+Trocar "branch"
+git switch main
+
 
 
 Visualização
