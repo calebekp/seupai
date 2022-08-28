@@ -1,0 +1,25 @@
+Repositorio
+---/---
+Clonar o repositorio
+git clone <repositorio> <pasta-local>
+---/---
+Clonar Brnach específica
+git clone -branch new_feature <repositorio>
+
+
+Visualização
+---/---
+Visualizar commigs 
+git log --oneline
+---/---
+Visualizar commit + infos
+git log -p
+---/---
+Infos do autor do commit
+git log --author"user-name"
+---/---
+Infos por data
+git log --sice=1.month.ago -- until=1.day.ago
+---/---
+alterar formatação
+git log --pretty="format:%h %s"
