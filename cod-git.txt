@@ -4,6 +4,7 @@ git add <arquivo> ou .(todos)
 git commit -m <comentario>
 git push or git push origin <branch>]
 git branch
+git merge <dev> (dentro da main)
 
 Repositorio
 ---/---
