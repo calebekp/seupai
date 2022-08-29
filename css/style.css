@@ -102,6 +102,24 @@ header .menu{
     margin-left: 40px;
 }
 
+.container{
+    margin-top: 70px;
+}
+
+.servicos-descricao{
+    width: 45%;
+    float: left;
+}
+
+.servicos-detalhe{
+    margin-top: 20px;;
+}
+
+.accordion{
+    width: 45%;
+    float: right;
+}
+
 .accordion-item{
     /*background-color: #283042;*/
     /*border-radius: .4rem;*/
