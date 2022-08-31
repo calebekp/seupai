@@ -100,6 +100,8 @@ header .menu{
     display: flex;
     align-items: center;
     margin-left: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 .container{
@@ -151,7 +153,7 @@ header .menu{
     max-height: 0;
     overflow: hidden;
     position: relative;
-    background-color: #212838;
+    background-color: #000000;
     transition: max-height 650ms;
 }
 
@@ -164,6 +166,7 @@ header .menu{
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    transform: tr
 
 }
 
