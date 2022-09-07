@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap');
 
 :root{ /*  SETAMOS AS CORES PADRÃO AQUI E USAMOS SOMENTE A VARIÁVEL NOS ELEMENTOS, ASISM SE PRECISAR MUDAR FAZEMOS UMA VEZ*/
     --color-background: #000000;
@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Caudex', sans-serif;
     background-color: var(--color-background);
     color: var(--color-text);
 }
@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    background-color: var(--color-headerfooter);
+    background-color: var(--color-background);
     height: 60px;
     display: flex;
     align-items: center;
@@ -188,7 +188,7 @@ header .menu{
 }
 
 footer{
-    background-color: var(--color-headerfooter);
+    background-color: var(--color-background);
     display: flex;
     /* Revisar tamanho footer */
 }
