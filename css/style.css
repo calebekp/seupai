@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap');
 
 :root{ /*  SETAMOS AS CORES PADRÃO AQUI E USAMOS SOMENTE A VARIÁVEL NOS ELEMENTOS, ASISM SE PRECISAR MUDAR FAZEMOS UMA VEZ*/
     --color-background: #000000;
@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Caudex', sans-serif;
     background-color: var(--color-background);
     color: var(--color-text);
 }
@@ -27,10 +27,13 @@ body {
 }
 
 header {
-    background-color: var(--color-headerfooter);
+    background-color: var(--color-background);
     height: 60px;
     display: flex;
     align-items: center;
+    border-bottom-style:solid;
+    border-color: var(--color-text);
+    border-bottom-width: thick;
 }
 
 header .list-items{
@@ -100,6 +103,8 @@ header .menu{
     display: flex;
     align-items: center;
     margin-left: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 .container{
@@ -151,7 +156,7 @@ header .menu{
     max-height: 0;
     overflow: hidden;
     position: relative;
-    background-color: #212838;
+    background-color: #000000;
     transition: max-height 650ms;
 }
 
@@ -164,6 +169,7 @@ header .menu{
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    transform: tr
 
 }
 
@@ -185,9 +191,12 @@ header .menu{
 }
 
 footer{
-    background-color: var(--color-headerfooter);
+    background-color: var(--color-background);
     display: flex;
     /* Revisar tamanho footer */
+    border-top-style:solid;
+    border-color: var(--color-text);
+    border-top-width: thick;
 }
 
 .flex-footer{
