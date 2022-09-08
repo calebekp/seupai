@@ -31,6 +31,9 @@ header {
     height: 60px;
     display: flex;
     align-items: center;
+    border-bottom-style:solid;
+    border-color: var(--color-text);
+    border-bottom-width: thick;
 }
 
 header .list-items{
@@ -191,6 +194,9 @@ footer{
     background-color: var(--color-background);
     display: flex;
     /* Revisar tamanho footer */
+    border-top-style:solid;
+    border-color: var(--color-text);
+    border-top-width: thick;
 }
 
 .flex-footer{
