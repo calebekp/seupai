@@ -26,33 +26,6 @@ body {
     min-width: 320px;
 }
 
-.dinamico-txt li{
-    line-height: 2;
-    font-size: 40px;
-    list-style: none;
-}
-
-.dinamico-txt li span{
-    position: relative;
-}
-
-.dinamico-txt li span::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #000000;
-    border-left: 2px solid #D9DFDB;
-    animation: slide 2s steps(15) infinite;
-}
-@keyframes slide {
-    100%{
-        left: 100%;
-        margin: 0 -35% 0 35%;
-    }
-}
-
 header {
     background-color: var(--color-background);
     height: 60px;
