@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap');
 
 :root{ /*  SETAMOS AS CORES PADRÃO AQUI E USAMOS SOMENTE A VARIÁVEL NOS ELEMENTOS, ASISM SE PRECISAR MUDAR FAZEMOS UMA VEZ*/
-    --color-background: #000000;
+    --color-background: #f0f8ff;
     --color-headerfooter: #8A7D63;
-    --color-text: #f4f9f5;
+    --color-text: #000000;
 }
 
 * { /* ZERAR TODAS AS MEDIDAS PADRÃO DO NAVEGADOR */
@@ -20,7 +20,7 @@ body {
 
 .flex-container {
     display: flex;
-    max-width: 992px;
+    max-width: 1300px;
     margin: auto;
     width: 100%;
     min-width: 320px;
@@ -46,7 +46,7 @@ header .list-items{
 }
 
 .list-items li a{
-    color: #fff;
+    color: var(--color-text);
     text-decoration: none;
     /*padding-right: 20px;*/
 }
@@ -55,7 +55,7 @@ header .list-items{
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: var(--color-text);
     font-size: 16px;
 }
 
