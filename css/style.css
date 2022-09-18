@@ -196,6 +196,26 @@ header .menu{
     display: block;
 }
 
+/*==================== SOBRE ====================*/
+.sobre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+}
+
+.imgSobre {
+    border-radius: 50%;
+}
+
+.textSobre{
+    padding-top: 50px;
+    text-align: center;
+}
+
 footer{
     background-color: var(--color-background);
     display: flex;
