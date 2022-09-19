@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap');
 
 :root{ /*  SETAMOS AS CORES PADRÃO AQUI E USAMOS SOMENTE A VARIÁVEL NOS ELEMENTOS, ASISM SE PRECISAR MUDAR FAZEMOS UMA VEZ*/
-    --color-background: #f0f8ff;
-    --color-headerfooter: #8A7D63;
-    --color-text: #4682B4;
+    --color-white: #f0f8ff;
     --color-blue: #4682B4;
     --color-red: #DC143C;
 }
@@ -16,8 +14,8 @@
 
 body {
     font-family: 'Caudex', sans-serif;
-    background-color: var(--color-background);
-    color: var(--color-text);
+    background-color: var(--color-white);
+    color: var(--color-blue);
 }
 
 .flex-container {
@@ -31,12 +29,13 @@ body {
 /* ----------------HEADER------------------- */
 
 header {
-    background-color: var(--color-background);
+    background-color: var(--color-blue);
+    color: var(--color-white);
     height: 60px;
     display: flex;
     align-items: center;
     border-bottom-style:solid;
-    border-color: var(--color-text);
+    border-color: var(--color-red);
     border-bottom-width: thick;
 }
 
@@ -50,7 +49,7 @@ header .list-items{
 }
 
 .list-items li a{
-    color: var(--color-text);
+    color: var(--color-white);
     text-decoration: none;
     /*padding-right: 20px;*/
 }
@@ -115,6 +114,11 @@ header .menu{
 
 /* ----------------SERVICES------------------- */
 
+.fundo{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
 .services{
     align-items: center;
     text-align: center;
@@ -131,7 +135,7 @@ header .menu{
     align-items: center;
     font-size: 70px;
     text-transform: uppercase;
-    color: var(--color-blue);
+    color: var(--color-white);
 }
 
 .servicos-detalhe{
@@ -152,19 +156,27 @@ header .menu{
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-    border: 3.5px solid var(--color-blue);
+    border: 3.5px solid var(--color-white);
     border-radius: 10px;
     transition: 1s all;
 }
 
 .cards li:hover{
     border-color: var(--color-red);
-    background-color: var(--color-blue);
-    color: var(--color-background);
+    background-color: var(--color-white);
+    color: var(--color-blue);
 
 }
 
-
+.titulo2{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+    align-items: center;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: var(--color-blue);
+}
 
 /*==================== SOBRE ====================*/
 .sobre{
@@ -188,12 +200,15 @@ header .menu{
     text-align: center;
 }
 
+/*==================== FOOTER ====================*/
+
 footer{
-    background-color: var(--color-background);
+    color: var(--color-white);
+    background-color: var(--color-blue);
     display: flex;
     /* Revisar tamanho footer */
     border-top-style:solid;
-    border-color: var(--color-text);
+    border-color: var(--color-white);
     border-top-width: thick;
 }
 
