@@ -178,6 +178,7 @@ header .menu{
     max-width: 1300px;
     margin: auto;
     width: 100%;
+    padding-bottom: 50px;
 }
 
 .titulo2{
@@ -204,17 +205,18 @@ header .menu{
 
 .feedbacks{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30vh 60vh 60vh 60vh;
-    grid-template-areas: "feedbacks feedbacks"
-                         "card-left1 ."
-                         ". card-right"
-                         "card-left2 .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30vh 40vh 40vh 40vh;
+    grid-template-areas: "feedbacks feedbacks feedbacks"
+                         "card-left1 card-left1 ."
+                         ". card-right card-right"
+                         "card-left2 card-left2 .";
     align-items: center;
     min-width: 320px;
     max-width: 1300px;
     margin: auto;
     width: 100%;
+    padding-bottom: 50px;
 }
 
 .feed-titulo{
@@ -237,16 +239,17 @@ header .menu{
     width: 300px;
     border-radius: 50%;
     box-shadow: 10px 10px 30px 0px #f0f8ff;
-    margin: 0px 50px 80px 0;
+    margin: 0 30px 0 0;
     grid-area: pessoa1;
 }
 
 .info-name{
     font-size: 20px;
+    padding-top: 20px;
 }
 
 .testemunho{
-    margin-top: 35px;
+    margin-top: 15px;
     font-size: 20px;
     font-style: italic;
     text-align: left;
@@ -260,17 +263,40 @@ header .menu{
     grid-area: card-right;
 }
 
-.card-left2{
-    grid-area: card-left2;
+.info-name2{
+    text-align: right;
+    font-size: 20px;
+    padding-top: 20px; 
+}
+
+.info-cargo2{
+    text-align: right;
+}
+
+.testemunho-right{
+    text-align: right;
+    margin-top: 15px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.info-insta2{
+    margin-top: 15px;
+    text-align: right;
 }
 
 .pessoa2{
     float: right;
     width: 300px;
+    margin: 0 0 0 30px;
     border-radius: 50%;
     box-shadow: 10px 10px 30px 0px #f0f8ff;
-    grid-area: pessoa2;
 }
+
+.card-left2{
+    grid-area: card-left2;
+}
+
 /*==================== FOOTER ====================*/
 
 footer{
