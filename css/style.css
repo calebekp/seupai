@@ -171,11 +171,15 @@ header .menu{
 
 /*==================== SOBRE ====================*/
 .sobre{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30vh 40vh 40vh;
+    grid-template-areas: "sobre sobre sobre"
+                         "sobred sobred sobred"
+                         "increase increase increase";
     align-items: center;
-    flex-direction: column;
     min-width: 320px;
-    max-width: 1300px;
+    max-width: 1300px; 
     margin: auto;
     width: 100%;
     padding-bottom: 50px;
@@ -188,17 +192,34 @@ header .menu{
     font-size: 70px;
     text-transform: uppercase;
     color: var(--color-blue);
+    grid-area: sobre;
+}
+
+.sobred{
+    grid-area: sobred;
+    width: 75%;
+    margin: auto;
 }
 
 .imgSobre {
+    float: left;
     width: 300px;
     border-radius: 50%;
     box-shadow: 10px 10px 30px 0px #4682B4;
+    margin: 0 30px 0 0;
 }
 
-.textSobre{
-    padding-top: 50px;
+.txtSobre{
     text-align: center;
+    margin-top: 90px;
+}
+
+.increase{
+    grid-area: increase;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 /*==================== FEEDBACKS ====================*/
@@ -213,7 +234,7 @@ header .menu{
                          "card-left2 card-left2 .";
     align-items: center;
     min-width: 320px;
-    max-width: 1300px;
+    max-width: 1300px; 
     margin: auto;
     width: 100%;
     padding-bottom: 50px;
