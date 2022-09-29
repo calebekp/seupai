@@ -215,11 +215,21 @@ header .menu{
 }
 
 .increase{
+    margin-top: 50px;
     grid-area: increase;
-    display: flex;
     text-align: center;
-    justify-content: space-around;
-    gap: 20px;
+}
+
+.increase li{
+    display: inline-block;
+    margin: 0 3%;
+    padding: 30px 20px;
+    font-size: 20px;
+}
+
+.increase li span{
+    font-size: 50px;
+    font-weight: bold;
 }
 
 /*==================== FEEDBACKS ====================*/
