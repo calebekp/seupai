@@ -70,7 +70,7 @@
         </section>
 
         <section class="sobre">
-            <h1 class="titulo2" id="sobre">Sobre</h1>
+            <h1 class="titulo2">Sobre</h1>
                 <div class="sobred">
                     <img src="./img/caina.png" alt="Cainã" class="imgSobre">
 
@@ -158,7 +158,7 @@
         </section>
 
         <section class="faq">
-            <h1 class="titulo2" id="faq">FAQ</h1>
+            <h1 class="titulo3" id="faq">FAQ</h1>
 
             <div class="accordion">
 
@@ -199,7 +199,26 @@
         </section>
 
         <section  class="contato">
-            <h1 class="titulo2" id="contato">Contato</h1>
+            <h1 class="titulo4" id="contato">Contato</h1>
+
+            <form action="POST">
+                <input type="text" name="Nome" id="nome" placeholder="Nome Completo">
+                <input type="tel" name="Telefone" id="telefone" placeholder="Telefone">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+
+                <FIeldset>
+                    <legend>Como prefere nosso contato?</legend>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                        <label for="radio-whats"><input type="radio" name="contato" value="whats" id="radio-whats">WhatsApp</label>
+                        <label for="radio-sms"><input type="radio" name="contato" value="sms" id="radio-sms">SMS</label>
+                </FIeldset>
+                
+                <textarea name="Comentarios" id="comentarios" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+
+            </form>
+
         </section>
     </main>
 
