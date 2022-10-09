@@ -70,7 +70,7 @@
         </section>
 
         <section class="sobre">
-            <h1 class="titulo2" id="sobre">Sobre</h1>
+            <h1 class="titulo2">Sobre</h1>
                 <div class="sobred">
                     <img src="./img/caina.png" alt="Cainã" class="imgSobre">
 
@@ -83,33 +83,43 @@
 
                     <h1>Nossos Status</h1>
 
-                    <div class="stats">
+                    <ul class="stats">
 
-                        <div class="1">
+                        <li class="status">
+                            <i class="fa-pessoa"></i>
+                            <span>+</span>
+                            <span class="sta" data-max="1">0</span>
+                            <span>.</span>
+                            <span class="sta" data-max="500">000</span>
+                            <span>.</span>
+                            <span>000</span>
+                            <p>Pessoas alcançadas</p>
+                        </li>
+
+                        <li class="status">
+                            <i class="fa-visua"></i>
+                            <span>+</span>
+                            <span class="sta" data-max="5">0</span>
+                            <span>.</span>
+                            <span  data-max="5">000</span>
+                            <span>.</span>
+                            <span  data-max="5">000</span>
+                            <p>Visualizações</p>
+                        </li>
+
+                        <li class="status">
                             <i class="fa-clientes"></i>
-                            <span class="sta" data-max="12">0</span>
-                            <p>Clientes</p>
-                        </div>
+                            <span class="sta" data-max="15">0</span>
+                            <p>Cientes/Serviços Prestados</p>
+                        </li>
 
-                        <div class="2">
-                            <i class="fa-dinheiro"></i>
-                            <span class="sta" data-max="500">0</span>
-                            <p>Dinheiro</p>
-                        </div>
+                        <li class="status">
+                            <i class="fa-paises"></i>
+                            <span class="sta" data-max="5">0</span>
+                            <p>Países</p>
+                        </li>
 
-                        <div class="3">
-                            <i class="fa-alcance"></i>
-                            <span class="sta" data-max="50000">0</span>
-                            <p>Alcance</p>
-                        </div>
-
-                        <div class="4">
-                            <i class="fa-aumento"></i>
-                            <span class="sta" data-max="300">0</span>
-                            <p>Aumento</p>
-                        </div>
-
-                    </div>
+                    </ul>
 
                 </div>
         </section>
@@ -143,16 +153,72 @@
                     <p class="testemunho">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sed ipsa quod voluptas quibusdam ratione quasi eius voluptatem consequatur eum esse ipsum beatae reiciendis aliquid explicabo, obcaecati quam adipisci dolore."</p>
                     <p class="info-insta">@cramos12</p>
                 </div>
-                    
+                <script src="/js/main.js"></script>
             </div>
         </section>
 
         <section class="faq">
-            <h1 class="titulo2" id="faq">FAQ</h1>
+            <h1 class="titulo3" id="faq">FAQ</h1>
+
+            <div class="accordion">
+
+                <div>
+                    <input type="radio" name="accordion_question1" id="q1" class="accordion_input">
+                    <label for="q1" class="accordion_question">Quais os valores cobrados pelo serviço?</label>
+                    <div class="accordion_answer">
+                        <p>O serviço é de graça</p>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="radio" name="accordion_question1" id="q1" class="accordion_input">
+                    <label for="q1" class="accordion_question">Quais os valores cobrados pelo serviço?</label>
+                    <div class="accordion_answer">
+                        <p>O serviço é de graça</p>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="radio" name="accordion_question1" id="q1" class="accordion_input">
+                    <label for="q1" class="accordion_question">Quais os valores cobrados pelo serviço?</label>
+                    <div class="accordion_answer">
+                        <p>O serviço é de graça</p>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="radio" name="accordion_question1" id="q1" class="accordion_input">
+                    <label for="q1" class="accordion_question">Quais os valores cobrados pelo serviço?</label>
+                    <div class="accordion_answer">
+                        <p>O serviço é de graça</p>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
 
         <section  class="contato">
-            <h1 class="titulo2" id="contato">Contato</h1>
+            <h1 class="titulo4" id="contato">Contato</h1>
+
+            <form action="POST">
+                <input type="text" name="Nome" id="nome" placeholder="Nome Completo">
+                <input type="tel" name="Telefone" id="telefone" placeholder="Telefone">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+
+                <FIeldset>
+                    <legend>Como prefere nosso contato?</legend>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                        <label for="radio-whats"><input type="radio" name="contato" value="whats" id="radio-whats">WhatsApp</label>
+                        <label for="radio-sms"><input type="radio" name="contato" value="sms" id="radio-sms">SMS</label>
+                </FIeldset>
+                
+                <textarea name="Comentarios" id="comentarios" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+
+            </form>
+
         </section>
     </main>
 
@@ -176,6 +242,5 @@
             </ul>
         </div>
     </footer>
-    <script> src="/js/main.js"</script>
 </body>
 </html>
