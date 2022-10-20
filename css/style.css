@@ -447,7 +447,8 @@ form{
     grid-area: form;
 }
 
-form input{
+input{
+    grid-area: form;
     font-size: 20px;
     border: solid 1px var(--color-blue2);
     border-radius: 5px;
@@ -457,18 +458,12 @@ form input{
     width: 30%;
 }
 
-form fieldset{
-    display: flex;
+fieldset{
     font-size: 20px;
-}
-
-label > input:radio{
-    flex-direction: column;
 }
 
 textarea{
     font-size: 20px;
-    resize: ;
     border: solid 1px var(--color-blue2);
     border-radius: 5px;
 }
