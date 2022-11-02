@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap');
 
 :root{ /*  SETAMOS AS CORES PADRÃO AQUI E USAMOS SOMENTE A VARIÁVEL NOS ELEMENTOS, ASISM SE PRECISAR MUDAR FAZEMOS UMA VEZ*/
-    --color-white: #f0f8ff;
-    --color-blue: #4682B4;
-    --color-blue2: #0d60a4;
-    --color-red: #DC143C;
+    --color-white: #F5FFFA;
+    --color-blue: #1C1C1C;
+    --color-red: darkorange;
 }
 
 * { /* ZERAR TODAS AS MEDIDAS PADRÃO DO NAVEGADOR */
@@ -67,6 +66,7 @@ header .list-items{
 .item:hover{
     font-size: 20px;
     transition: 600ms;
+    color: var(--color-red);
 }
 
 .item::before,
@@ -76,7 +76,7 @@ header .list-items{
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--color-white);
+    background-color: var(--color-red);
     transform: scaleX(0);
     transition: transform .25s;
 }
@@ -104,6 +104,7 @@ header .menu{
 
 .inicial{
     margin-top: 40px;
+    background-color: ;
 }
 
 .apresentacao{
@@ -122,12 +123,18 @@ header .menu{
 }
 
 .services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30vh 40vh 40vh;
+    grid-template-areas: "servicet servicet servicet"
+                         "serviced serviced serviced"
+                         "cards cards cards";
     align-items: center;
-    text-align: center;
-    max-width: 1300px;
+    min-width: 320px;
+    max-width: 1300px; 
     margin: auto;
     width: 100%;
-    min-width: 320px;
+    padding-bottom: 50px;
 }
 
 .titulo1{
@@ -137,18 +144,28 @@ header .menu{
     align-items: center;
     font-size: 70px;
     text-transform: uppercase;
-    color: var(--color-white);
+    color: var(--color-red);
+    grid-area: servicet;
 }
 
 .servicos-detalhe{
-    margin-top: 20px;
     text-align: center;
+    grid-area: serviced;
+}
+
+.servicos-detalhe img {
+    width: 40px;
+    position: absolute;
+    animation: anima 3s linear infinite;
+    background-image: -webkit-linear-gradient(to right);
 }
 
 .cards{
     width: 1300px;
     margin: 0 auto;
     padding: 50px 0;
+    grid-area: cards;
+    font-weight: bold;
 }
 
 .cards li{
@@ -164,8 +181,9 @@ header .menu{
 }
 
 .cards li:hover{
-    border-color: var(--color-red);
-    background-color: var(--color-white);
+    font-weight: bold;
+    border-color: var(--color-white);
+    background-color: var(--color-red);
     color: var(--color-blue);
 
 }
@@ -206,7 +224,7 @@ header .menu{
     float: left;
     width: 300px;
     border-radius: 50%;
-    box-shadow: 10px 10px 30px 0px #4682B4;
+    box-shadow: 10px 10px 30px 0px #f0f8ff;
     margin: 0 30px 0 0;
 }
 
@@ -258,7 +276,7 @@ header .menu{
     align-items: center;
     font-size: 70px;
     text-transform: uppercase;
-    color: var(--color-white);
+    color: var(--color-red);
     grid-area: feedbacks;
 }
 
@@ -270,7 +288,7 @@ header .menu{
     float: left;
     width: 300px;
     border-radius: 50%;
-    box-shadow: 10px 10px 30px 0px #f0f8ff;
+    box-shadow: 5px 5px 15px 0px #f0f8ff;
     margin: 0 30px 0 0;
     grid-area: pessoa1;
 }
@@ -278,6 +296,11 @@ header .menu{
 .info-name{
     font-size: 20px;
     padding-top: 20px;
+    color: var(--color-red);
+}
+
+.info-cargo{
+    color: var(--color-red);
 }
 
 .testemunho{
@@ -289,6 +312,7 @@ header .menu{
 
 .info-insta{
     margin-top: 15px;
+    color: var(--color-red);
 }
 
 .card-right{
@@ -299,10 +323,12 @@ header .menu{
     text-align: right;
     font-size: 20px;
     padding-top: 20px; 
+    color: var(--color-red);
 }
 
 .info-cargo2{
     text-align: right;
+    color: var(--color-red);
 }
 
 .testemunho-right{
@@ -315,6 +341,7 @@ header .menu{
 .info-insta2{
     margin-top: 15px;
     text-align: right;
+    color: var(--color-red);
 }
 
 .pessoa2{
@@ -322,7 +349,7 @@ header .menu{
     width: 300px;
     margin: 0 0 0 30px;
     border-radius: 50%;
-    box-shadow: 10px 10px 30px 0px #f0f8ff;
+    box-shadow: -5px 5px 15px 0px #f0f8ff;
 }
 
 .card-left2{
@@ -360,7 +387,7 @@ header .menu{
     box-shadow: 0 0 10px rgba (0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
-    background: var(--color-blue2);
+    background: var(--color-blue);
     color: #0d60a4;
     grid-area: accordion;
 }
@@ -380,7 +407,7 @@ header .menu{
 }
 
 .accordion_question:hover{
-    background: rgba(0, 0, 0, 0.1);    
+    background: var(--color-red)
 }
 
 .accordion_question::after{
@@ -397,12 +424,13 @@ header .menu{
 }
 
 .accordion_answer{
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    background-color: var(--color-red);
+    color: var(--color-blue);
     line-height: 1.6;
     font-size: 0.85em;
     display: none;
     margin: 5px 15px; 
+    border-radius: 10px;
 }
 
 .accordion_input {
@@ -438,38 +466,32 @@ header .menu{
     margin-bottom: 10px;
     font-size: 70px;
     text-transform: uppercase;
-    color: var(--color-blue);
+    color: var(--color-red);
     grid-area: titulo4;
     text-align: center;
 }
 
-form{
+.form{
     grid-area: form;
 }
 
-form input{
+.input{
+    display: flex;
     font-size: 20px;
-    border: solid 1px var(--color-blue2);
+    border: solid 1px var(--color-blue);
     border-radius: 5px;
-    display: block;
     margin: 0 0 20px;
     padding: 5px 15px;
     width: 30%;
 }
 
-form fieldset{
-    display: flex;
+.quest{
     font-size: 20px;
-}
-
-label > input:radio{
-    flex-direction: column;
 }
 
 textarea{
     font-size: 20px;
-    resize: ;
-    border: solid 1px var(--color-blue2);
+    border: solid 1px var(--color-blue);
     border-radius: 5px;
 }
 
@@ -499,7 +521,7 @@ footer{
     display: flex;
     /* Revisar tamanho footer */
     border-top-style:solid;
-    border-color: var(--color-white);
+    border-color: var(--color-red);
     border-top-width: thick;
 }
 
