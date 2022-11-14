@@ -3,7 +3,7 @@
 :root{ /*  SETAMOS AS CORES PADRÃO AQUI E USAMOS SOMENTE A VARIÁVEL NOS ELEMENTOS, ASISM SE PRECISAR MUDAR FAZEMOS UMA VEZ*/
     --color-white: #F5FFFA;
     --color-blue: #1C1C1C;
-    --color-red: darkorange;
+    --color-orange: darkorange;
 }
 
 * { /* ZERAR TODAS AS MEDIDAS PADRÃO DO NAVEGADOR */
@@ -36,7 +36,7 @@ header {
     display: flex;
     align-items: center;
     border-bottom-style:solid;
-    border-color: var(--color-red);
+    border-color: var(--color-orange);
     border-bottom-width: thick;
 }
 
@@ -66,7 +66,7 @@ header .list-items{
 .item:hover{
     font-size: 20px;
     transition: 600ms;
-    color: var(--color-red);
+    color: var(--color-orange);
 }
 
 .item::before,
@@ -76,7 +76,7 @@ header .list-items{
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--color-red);
+    background-color: var(--color-orange);
     transform: scaleX(0);
     transition: transform .25s;
 }
@@ -139,25 +139,17 @@ header .menu{
 
 .titulo1{
     margin-top: 75px;
-    margin-bottom: 75px;
+    margin-bottom: 10px;
     text-align: center;
-    align-items: center;
     font-size: 70px;
     text-transform: uppercase;
-    color: var(--color-red);
+    color: var(--color-orange);
     grid-area: servicet;
 }
 
 .servicos-detalhe{
     text-align: center;
     grid-area: serviced;
-}
-
-.servicos-detalhe img {
-    width: 40px;
-    position: absolute;
-    animation: anima 3s linear infinite;
-    background-image: -webkit-linear-gradient(to right);
 }
 
 .cards{
@@ -183,7 +175,7 @@ header .menu{
 .cards li:hover{
     font-weight: bold;
     border-color: var(--color-white);
-    background-color: var(--color-red);
+    background-color: var(--color-orange);
     color: var(--color-blue);
 
 }
@@ -276,7 +268,7 @@ header .menu{
     align-items: center;
     font-size: 70px;
     text-transform: uppercase;
-    color: var(--color-red);
+    color: var(--color-orange);
     grid-area: feedbacks;
 }
 
@@ -296,11 +288,11 @@ header .menu{
 .info-name{
     font-size: 20px;
     padding-top: 20px;
-    color: var(--color-red);
+    color: var(--color-orange);
 }
 
 .info-cargo{
-    color: var(--color-red);
+    color: var(--color-orange);
 }
 
 .testemunho{
@@ -312,7 +304,7 @@ header .menu{
 
 .info-insta{
     margin-top: 15px;
-    color: var(--color-red);
+    color: var(--color-orange);
 }
 
 .card-right{
@@ -323,12 +315,12 @@ header .menu{
     text-align: right;
     font-size: 20px;
     padding-top: 20px; 
-    color: var(--color-red);
+    color: var(--color-orange);
 }
 
 .info-cargo2{
     text-align: right;
-    color: var(--color-red);
+    color: var(--color-orange);
 }
 
 .testemunho-right{
@@ -341,7 +333,7 @@ header .menu{
 .info-insta2{
     margin-top: 15px;
     text-align: right;
-    color: var(--color-red);
+    color: var(--color-orange);
 }
 
 .pessoa2{
@@ -407,7 +399,7 @@ header .menu{
 }
 
 .accordion_question:hover{
-    background: var(--color-red)
+    background: var(--color-orange)
 }
 
 .accordion_question::after{
@@ -424,7 +416,7 @@ header .menu{
 }
 
 .accordion_answer{
-    background-color: var(--color-red);
+    background-color: var(--color-orange);
     color: var(--color-blue);
     line-height: 1.6;
     font-size: 0.85em;
@@ -466,7 +458,7 @@ header .menu{
     margin-bottom: 10px;
     font-size: 70px;
     text-transform: uppercase;
-    color: var(--color-red);
+    color: var(--color-orange);
     grid-area: titulo4;
     text-align: center;
 }
@@ -521,7 +513,7 @@ footer{
     display: flex;
     /* Revisar tamanho footer */
     border-top-style:solid;
-    border-color: var(--color-red);
+    border-color: var(--color-orange);
     border-top-width: thick;
 }
 
