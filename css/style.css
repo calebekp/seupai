@@ -2,7 +2,7 @@
 
 :root{ /*  SETAMOS AS CORES PADRÃO AQUI E USAMOS SOMENTE A VARIÁVEL NOS ELEMENTOS, ASISM SE PRECISAR MUDAR FAZEMOS UMA VEZ*/
     --color-white: #F5FFFA;
-    --color-blue: #1C1C1C;
+    --color-black: #1C1C1C;
     --color-orange: darkorange;
 }
 
@@ -16,7 +16,7 @@
 body {
     font-family: 'Caudex', sans-serif;
     background-color: var(--color-white);
-    color: var(--color-blue);
+    color: var(--color-black);
 }
 
 .flex-container {
@@ -30,7 +30,7 @@ body {
 /*==================== HEADER ====================*/
 
 header {
-    background-color: var(--color-blue);
+    background-color: var(--color-black);
     color: var(--color-white);
     height: 60px;
     display: flex;
@@ -118,7 +118,7 @@ header .menu{
 /*==================== SERVICES ====================*/
 
 .fundo{
-    background-color: var(--color-blue);
+    background-color: var(--color-black);
     color: var(--color-white);
 }
 
@@ -176,7 +176,7 @@ header .menu{
     font-weight: bold;
     border-color: var(--color-white);
     background-color: var(--color-orange);
-    color: var(--color-blue);
+    color: var(--color-black);
 
 }
 
@@ -202,7 +202,7 @@ header .menu{
     text-align: center;
     font-size: 70px;
     text-transform: uppercase;
-    color: var(--color-blue);
+    color: var(--color-black);
     grid-area: sobret;
 }
 
@@ -369,72 +369,51 @@ header .menu{
     margin-bottom: 10px;
     font-size: 70px;
     text-transform: uppercase;
-    color: var(--color-blue);
+    color: var(--color-black);
     grid-area: faq;
     text-align: center;
 }
 
 .accordion {
     max-width: 100%;
-    box-shadow: 0 0 10px rgba (0, 0, 0, 0.2);
     border-radius: 5px;
-    overflow: hidden;
-    background: var(--color-blue);
-    color: #0d60a4;
+    background: var(--color-black);
     grid-area: accordion;
 }
 
-.accordion_question,
-.accordion_answer{
-    padding: 14px 20px;
-}
-
-.accordion_question{
+.accordion_button{
     display: block;
-    color: var(--color-white);
-    font-weight: 500;
+    width: 100%;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
     cursor: pointer;
-    position: relative;
-    transition: background 0.1s;
-}
-
-.accordion_question:hover{
-    background: var(--color-orange)
-}
-
-.accordion_question::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px;
-    width: 12px;
-    height: 6px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
-    background-size: contain;
-    transition: transform 0.4s;
-}
-
-.accordion_answer{
-    background-color: var(--color-orange);
-    color: var(--color-blue);
-    line-height: 1.6;
-    font-size: 0.85em;
+    background: var(--color-black);
+    color: var(--color-white);
+    text-align: left;
+    transition: background 0.2s;
+  }
+  
+.accordion_button::after{
+    content:'\25be';
+    color: var(--color-orange);
+    float: right;
+    transform: scale(1.5);
+  }
+  
+.accordion_button--active + .accordion_content { display:block };
+.accordion_button--active { background: var(--color-orange) }
+.accordion_button--active::after { content:'\25b4' }
+  
+.accordion_content{
     display: none;
+    overflow: auto;
+    padding: 10px 10px;
+    font-size: 0.85em;
+    background: var(--color-orange);
     margin: 5px 15px; 
     border-radius: 10px;
-}
-
-.accordion_input {
-    display: none;
-  }
-
-  .accordion_input:checked ~ .accordion_answer {
-    display: block;
-  }
-
-  .accordion:checked ~ .accordion_question::after {
-    transform: translateY(-50%) rotate(0.5turn);
   }
 
 /*=================== CONTATO ====================*/
@@ -470,7 +449,7 @@ header .menu{
 .input{
     display: flex;
     font-size: 20px;
-    border: solid 1px var(--color-blue);
+    border: solid 1px var(--color-black);
     border-radius: 5px;
     margin: 0 0 20px;
     padding: 5px 15px;
@@ -483,7 +462,7 @@ header .menu{
 
 textarea{
     font-size: 20px;
-    border: solid 1px var(--color-blue);
+    border: solid 1px var(--color-black);
     border-radius: 5px;
 }
 
@@ -509,7 +488,7 @@ textarea{
 
 footer{
     color: var(--color-white);
-    background-color: var(--color-blue);
+    background-color: var(--color-black);
     display: flex;
     /* Revisar tamanho footer */
     border-top-style:solid;
