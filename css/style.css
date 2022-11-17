@@ -104,7 +104,6 @@ header .menu{
 
 .inicial{
     margin-top: 40px;
-    background-color: ;
 }
 
 .apresentacao{
@@ -412,7 +411,7 @@ header .menu{
     padding: 10px 10px;
     font-size: 0.85em;
     background: var(--color-orange);
-    margin: 5px 15px; 
+    margin: 5px 15px;
     border-radius: 10px;
   }
 
