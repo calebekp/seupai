@@ -112,6 +112,11 @@ header .menu{
     margin-left: 40px;
     font-size: 40px;
     text-transform: uppercase;
+
+    min-width: 320px;
+    max-width: 1300px; 
+    margin: auto;
+    width: 100%;
 }
 
 /*==================== SERVICES ====================*/
@@ -123,11 +128,10 @@ header .menu{
 
 .services{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30vh 40vh 40vh;
-    grid-template-areas: "servicet servicet servicet"
-                         "serviced serviced serviced"
-                         "cards cards cards";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 70vh;
+    grid-template-areas: "servicet servicet"
+                         "cards cards";
     align-items: center;
     min-width: 320px;
     max-width: 1300px; 
@@ -419,56 +423,47 @@ header .menu{
 
 .contato{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30vh 80vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 70vh;
     grid-template-areas: "titulo4 titulo4 titulo4"
                          "form form form";
     align-items: center;
     min-width: 320px;
     max-width: 1300px; 
     margin: auto;
-    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
 }
 
 .titulo4{
+    margin-top: 75px;
+    margin-bottom: 10px;
     font-size: 70px;
     text-transform: uppercase;
     color: var(--color-orange);
     grid-area: titulo4;
+    text-align: center;
 }
 
 .form{
     grid-area: form;
-    align-items: center;
-    justify-items: center;
 }
 
 .input{
+    display: flex;
     font-size: 20px;
     border: solid 1px var(--color-black);
     border-radius: 5px;
     margin: 0 0 20px;
     padding: 5px 15px;
-    width: 35em;
-}
-
-.quest{
-    font-size: 20px;
-    margin-bottom: 1em;
-    justify-items: stretch;
+    width: 30%;
 }
 
 textarea{
     font-size: 20px;
     border: solid 1px var(--color-black);
     border-radius: 5px;
-}
-
-.comentarios{
-    font-size: 20px;
-    border: solid 1px var(--color-black);
-    border-radius: 5px;
-    width: 35em;
+    width: 32.5%;
 }
 
 .enviar{
