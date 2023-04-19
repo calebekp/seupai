@@ -102,6 +102,11 @@ header .menu{
 
 /*==================== HOME ====================*/
 
+.dinamico-txt {
+    visibility: hidden;
+}
+
+
 .inicial{
     margin-top: 40px;
 }
