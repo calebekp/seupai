@@ -451,7 +451,10 @@ header .menu{
 }
 
 .form{
+    display: flex;
+    flex-direction: column;
     grid-area: form;
+    gap: 5px;
 }
 
 .input{
@@ -472,6 +475,7 @@ textarea{
 }
 
 .enviar{
+    display: block;
     width: 40%;
     padding: 15px 0;
     background: orange;
