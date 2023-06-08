@@ -7,83 +7,216 @@
 
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>Cainã - Tráfego Pago</title>
     
 </head>
 <body>
-    <header> <!-- Cabeçalho(fixo) com logo e links  -->
+    <header>
         <div class="flex-container menu">
             <div><h1>Cainã Koentopp</h1></div>
             <ul class="list-items">
                 <li><a href="" class="item">Home</a></li>
-                <li><a href="" class="item">Serviços</a></li>
-                <li><a href="" class="item">Sobre</a></li>
-                <li><a href="" class="item">Feedbacks</a></li>
-                <li><a href="" class="item">Contato</a></li>
-                <li><a href="" class="item">FAQ</a></li>
+                <li><a href="#services" class="item">Serviços</a></li>
+                <li><a href="#sobre" class="item">Sobre</a></li>
+                <li><a href="#feedbacks" class="item">Feedbacks</a></li>
+                <li><a href="#faq" class="item">FAQ</a></li>
+                <li><a href="#contato" class="item">Contato</a></li>
             </ul> 
         </div>
         
     </header>
 
-    <main>
+    <main class="">
         <div class="inicial flex-container">
             <div class="apresentacao">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <ul class="dinamico-txt"><a name="services"></a>
+                    <li><span>Geração de Leads</span></li>
+                    <li><span>Branding</span></li>
+                    <li><span>Growth</span></li>
+                    <li><span>Aumento de Vendas</span></li>
+                </ul>
+                <script src="/js/scrollreveal.js"></script>
             </div>
-            <img src="/img/funil2.png" alt="Funil de Redes Sociais">
+            <img src="/img/funil.png" alt="Funil de Redes Sociais">
             <!-- APRENSENTAÇÃO INICIAL (FUNIL + TEXTOS QUE CHAMEM A ATENÇÃO)
                  + FORMULÁRIO PARA CLIENTES INTERESSADOS -->
         </div>
         <section>
-            <div class="services flex-container">
-                    <div class="container">
-                        <h2>Serviços</h2>
-                            <div>
-                                <p>Ao lado direito pode se ver todos os serviços que nossa empresa oferece, você pode escolher quais contratar. Oferecemos toda uma estrutura digital para colocar sua empresa no nível mais alto do mercado! Todos impulsionarão a sua empresa para cima como um foguete. FOGUETE NÃO TEM RÉ (icone Foguete) (Clique no Foguete | efeito do texto desaparecendo - retorna dps) 
-                                </p>
-                            </div>
-                            <div class="accordion"'>
-                                <div class="accordion-item" id="google">
-                                    <a class="accordion-link" href="#google">
-                                        Google ADS
-                                        <i class="icon ion-md-add"></i>
-                                        <i class="icon ion-md-remove"></i>
-                                    </a>
-                                    <div class="answer">
-                                        <p>O Google é a principal ferramenta de busca no mundo, são feitas mais de 3 bilhões de pesquisas diárias. Eu coloco o seu produto/serviço para disputar nas primeiras posições dessas pesquisas relacionadas a seu serviço.</p>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item" id="meta">
-                                    <a class="accordion-link" href="#meta">
-                                        META
-                                        <i class="icon ion-md-add"></i>
-                                        <i class="icon ion-md-remove"></i>
-                                    </a>
-                                    <div class="answer">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor harum rem? Dolore, hic? Hic deserunt animi iusto, commodi necessitatibus voluptates praesentium sed vero, libero ullam, accusantium aliquid tempore atque.</p>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item" id="seo">
-                                    <a class="accordion-link" href="#seo">
-                                        SEO
-                                        <i class="icon ion-md-add"></i>
-                                        <i class="icon ion-md-remove"></i>
-                                    </a>
-                                    <div class="answer">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor harum rem? Dolore, hic? Hic deserunt animi iusto, commodi necessitatibus voluptates praesentium sed vero, libero ullam, accusantium aliquid tempore atque.</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                    </div>
+            <div class="fundo">
+                <div class="services">
+                    <h1 class="titulo1">Serviços</h1>
+                        <ul class="cards">
+                            <li>
+                                <h2>Tráfego Pago</h2>
+                                <p class="desc">Criação de anuncios junto de estratégias de marketing e vendas que permitem o alcance de um grande número de pessoas, assim buscando novos Leads/Clientes, gerando maior resultado para a empresa e valorizando o branding.</p>
+                            </li>
+                            <li>
+                                <h2>Social Media</h2>
+                                <p class="desc">O nosso serviço de gestão de redes sociais envolve diversas etapas ajustadas aos objetivos da sua empresa e aos interesses do público-alvo que pretende atingir. Da análise de concorrestes e do mercado, planificação e definição da estratégia de redes sociais ao posicionamento, calendarização de publicações, partilha de conteúdos e medição de resultados.</p>
+                            </li>
+                            <li>
+                                <h2>Consultoria</h2>
+                                <p class="desc">Fazemos um planejamento visando as necessidades da empresa, é um planejamento completo, vamos dar todos os direcionamentos necessários. 
+                                    Será entregue identidade visual da empresa, planejamento de trafego pago e social media para 3 meses e um direcionamento básico para meses seguintes, junto disso será entregue alguns designs que são usados neste mesmo planejamento.</p>
+                            </li>
+                        </ul>
+                </div>
             </div>
-        </section>    <!-- APRENSENTAÇÃO PERFIL E SKILLS DO CAINÃ -->
-    </main>
+        </section>
 
-    <br> <!-- SÓ PRA PULA A LINHA E SEPARAR O HEADER DO FOOTER -->
+        <section class="sobre">
+            <h1 class="titulo2">Sobre</h1>
+                <div class="sobred">
+                    <img src="./img/caina.png" alt="Cainã" class="imgSobre">
+
+                    <p class="txtSobre">
+                        Olá, 
+                        <br>Me chamo Cainã e sou nascido no sul, Santa Catarina. Tenho 22 anos e sou formado em Marketing por uma instituição Portuguesa. 
+                        <br>Tive a oportunidade de trabalhar em varios nichos, tenho uma experiencia diversificada. Já trabalhei com restaurantes, estética, imobiliarias, arquitetura, migração, arte e luxo. Tive o privilégio de trabalhar com empresas tanto brasileiras como Portuguesas e Angolanas. Anúncios que atuaram em paises da America do Sul, Europa e Africa.
+                        <br>Hoje eu trabalho com parceiros, então tenho a capacidade de lhe oferecer um serviço completo, fazendo a sua empresa crescer em todos os ambitos do Marketing.
+                    </p>
+                </div>
+
+                <div class="increase">
+
+                    <h1>Nossos Status</h1>
+
+                    <ul class="stats">
+
+                        <li class="status">
+                            <i class="fa-pessoa"></i>
+                            <span>+</span>
+                            <span class="sta" data-max="1">0</span>
+                            <span>.</span>
+                            <span class="sta" data-max="500">000</span>
+                            <span>.</span>
+                            <span>000</span>
+                            <p>Pessoas alcançadas</p>
+                        </li>
+
+                        <li class="status">
+                            <i class="fa-visua"></i>
+                            <span>+</span>
+                            <span class="sta" data-max="5">0</span>
+                            <span>.</span>
+                            <span  data-max="5">000</span>
+                            <span>.</span>
+                            <span  data-max="5">000</span>
+                            <p>Visualizações</p>
+                        </li>
+
+                        <li class="status">
+                            <i class="fa-clientes"></i>
+                            <span class="sta" data-max="15">0</span>
+                            <p>Cientes/Serviços Prestados</p>
+                        </li>
+
+                        <li class="status">
+                            <i class="fa-paises"></i>
+                            <span class="sta" data-max="5">0</span>
+                            <p>Países</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+        </section>
+
+        <section class="fundo">
+            <div class="feedbacks">
+
+                <h1 class="feed-titulo" id="feedbacks">Feedbacks</h1>
+
+                <div class="card-left1">
+                    <img src="/img/pessoa1.jpeg" alt="pessoa1" class="pessoa1">
+                    <p class="info-name">Calebe Koentopp</p>
+                    <p class="info-cargo">Software Service Consultant</p>
+                    <p class="testemunho">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sed ipsa quod voluptas quibusdam ratione quasi eius voluptatem consequatur eum esse ipsum beatae reiciendis aliquid explicabo, obcaecati quam adipisci dolore."</p>
+                    <p class="info-insta">@calebekp</p>
+
+                </div>
+
+                <div class="card-right">
+                    <img src="/img/pessoa2.jpeg" alt="pessoa2" class="pessoa2">
+                    <p class="info-name2">Leonardo Penz</p>
+                    <p class="info-cargo2">CEO Viqua</p>
+                    <p class="testemunho-right">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sed ipsa quod voluptas quibusdam ratione quasi eius voluptatem consequatur eum esse ipsum beatae reiciendis aliquid explicabo, obcaecati quam adipisci dolore."</p>
+                    <p class="info-insta2">@leopenz</p>    
+                </div>
+
+                <div class="card-left2">
+                    <img src="/img/pessoa3.jpeg" alt="pessoa1" class="pessoa1">
+                    <p class="info-name">Cássio Ramos</p>
+                    <p class="info-cargo">Princeso da Disney</p>
+                    <p class="testemunho">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sed ipsa quod voluptas quibusdam ratione quasi eius voluptatem consequatur eum esse ipsum beatae reiciendis aliquid explicabo, obcaecati quam adipisci dolore."</p>
+                    <p class="info-insta">@cramos12</p>
+                </div>
+                <script src="/js/main.js"></script>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h1 class="titulo3" id="faq">FAQ</h1>
+
+            <div class="accordion">
+
+                <button type="button" class="accordion_button">Quais os valores cobrados pelo serviço?</button>
+                <div class="accordion_content">
+                    <p>O preço varia muito daquilo que é necessitado pela pessoa, mas o serviço geralmente é orçamentado entre R$500 a R$1500.</p>
+                </div>
+
+                <button type="button" class="accordion_button">Quanto é o mínimo necessário para começar a investir em anúncios?</button>
+                <div class="accordion_content">
+                    <p>Não existe um valor mínimo, pois dá para fazer um anúncio por apenas 2 reais. Mas ele não duraria ou alcançaria quase ninguém. 
+                        O valor depende muito de cada serviço/produto e estratégia de cada negócio, mas não sugiro começar a anunciar com menos de R$300 por mês.
+                    </p>
+                </div>
+
+                <button type="button" class="accordion_button">Quanto tempo demora para começar a funcionar os anúncios?</button>
+                <div class="accordion_content">
+                    <p>Assim que for passada todas as informações e acessos necessários, os anúncios começam a funcionar dentro de 3 dias.</p>
+                </div>
+
+                <button type="button" class="accordion_button">Para quem é indicado os anúncios?</button>
+                <div class="accordion_content">
+                    <p>Para qualquer empresa que deseja ter um crescimento significativo em visitas, vendas e branding.</p>
+                </div>
+
+                <button type="button" class="accordion_button">Existe alguma garantia de resultados?</button>
+                <div class="accordion_content">
+                    <p>No meu ponto de vista sim, no pior dos casos pode acontecer de os anúncios não trazerem uma grande quantidade de vendas que às vezes é o que o cliente mais quer. Mas o anúncio sempre vai dar a questão do branding (visibilidade), pois desde o momento que uma pessoa vê sua empresa isso não pode ser retirado.</p>
+                </div>
+
+                <button type="button" class="accordion_button">Se eu não quiser mais o serviço de tráfego pago, eu posso parar quando?</button>
+                <div class="accordion_content">
+                    <p>No contrato é dito que precisa dar um aviso prévio de 30 dias. Então, por exemplo, se acabamos de iniciar o mês de janeiro e você me diz que quer rescindir o contrato, eu vou trabalhar para você o mês de janeiro completo e seria pago por ele, depois disso os dois estarão livres do contrato.</p>
+                </div>
+
+                <script src="/js/accordion.js"></script>
+
+            </div>
+
+        </section>
+
+        <section  class="fundo" >
+            <div class="contato">
+                <h1 class="titulo4" id="contato">Contato</h1>
+
+                <form class="form" action="POST">
+                    <input class="input" type="text" name="Nome" id="nome" placeholder="Nome Completo">
+                    <input class="input" type="tele" name="Telefone" id="telefone" placeholder="Telefone">
+                    <input class="input" type="email" name="email" id="email" placeholder="E-mail">
+
+                    
+                    <textarea name="Comentarios" id="comentarios" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
+
+                    <input type="submit" value="Enviar Formulário" class="enviar">
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="flex-footer">
